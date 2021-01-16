@@ -89,12 +89,12 @@ public class Hello {
 
     // 运行 Art+Shift+F10; 调试 Shift+F9； 停止 Ctrl+F2
     // 格式化代码/import列表 Ctrl+Alt+L/o
-    // 快速修复 Alt+Enter
+    // 快速修复错误、new对象时返回对象的定义都是 Alt+Enter
 
     // 快捷键1：代码生成：
-    // Ctrl+j、上面的所有模板、
+    // Ctrl+j、上面的所有模板
     // Alt+Insert(编辑窗口生成构造函数、toString、getter/setter、重写父类方法)
-    // xxx.方法名().var+Tab/Enter 生成变量并赋值
+    // xxx.var、xxx.方法名().var+Tab/Enter 生成变量并赋值
     // Ctrl+Shift+Enter 补全if/for的花括号{}、一行代码结束的末尾封号;
 
     // 快捷键2：编辑：
@@ -105,4 +105,6 @@ public class Hello {
     // 将当前行移动到上/下一行 Shift + Alt + 上/下键
     // 当前行上/下一行插入空行 Ctrl + Alt + Enter、Shift + Enter
 
+    // 快捷键3：UML类图
+    // Ctrl + Shift +Alt + U、Ctrl +Alt + U
 }
