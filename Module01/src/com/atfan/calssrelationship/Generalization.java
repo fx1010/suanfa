@@ -4,10 +4,37 @@ package com.atfan.calssrelationship;
  * @author fx
  * @create 2021-01-16 23:33
  */
-class Car {
-    public String name="1";
-    public void ruanCar(){
+/*public class Generalization {
+    public static void main(String[] args) {
+        Bus bus = new Bus();
+        Taxi taxi = new Taxi();
+        System.out.println(bus.ruanCar());
+        taxi.ruanCar();
     }
+}*/
+
+class Car implements Vehicle {
+    public String name;
+    public Driver driver;
+
+    /*public Car() {
+    }
+
+    public Car(String name) {
+        this.name = name;
+    }*/
+
+    public String beforRun(Oil oil) {
+        return "添加" + oil.add();
+    }
+
+    public String runCommunication() {
+        return name + "在行驶中";
+    }
+
+    /*public void addDriver(Driver driver) {
+        this.driver = driver;
+    }*/
 }
 
 class Bus extends Car {
@@ -23,11 +50,12 @@ class Taxi extends Car {
 
 }
 
-public class Generalization {
-    public static void main(String[] args) {
-        Bus bus = new Bus();
-        Taxi taxi = new Taxi();
-        bus.ruanCar();
-        taxi.ruanCar();
+class Oil {
+    private String type = "汽油";
+
+    public String add() {
+        return this.type;
     }
 }
+
+

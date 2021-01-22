@@ -1,4 +1,4 @@
-package com.atfan.java;
+package com.atfan.calssrelationship;
 
 /**
  * @author fx
